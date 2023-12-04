@@ -47,7 +47,7 @@
 
 .Menu 
   display: flex
-  justify-content: end
+  justify-content: space-between
   column-gap: 1rem
   height: 100px
   width: 100%
@@ -68,30 +68,48 @@
     position: fixed
     justify-content: center
 
-  a 
-    font-size: 1rem
-    text-transform: uppercase
-    padding: 2rem 0
-    font-weight: bold
-    color: #2EC4B6
-    text-decoration: none
-    transition: color 0.3s linear
-    
+  div 
+    display: flex
+    justify-content: center
     text-align: center
-    margin-right: 1rem
-
     @media (max-width: 576px) 
-      font-size: 1.5rem
+      flex-direction: column
+      width: 100vw
+
+    a 
+      font-size: 1rem
+      text-transform: uppercase
+      padding: 2rem 0
+      font-weight: bold
+      color: #2EC4B6
+      text-decoration: none
+      transition: color 0.3s linear
       text-align: center
-      letter-spacing: 0.5rem
-    
+      margin-right: 2rem
+      @media (max-width: 576px) 
+        font-size: 1.5rem
+        text-align: center
+        letter-spacing: 0.5rem
+        margin-right: 0
+        
+    .active
+      color: black
+
 
     &:hover 
       color: #343078
+  
+  img
+    width: 60px
+    margin-left: 2rem
+    @media (max-width: 576px) 
+      display: none
     
   
 #MenuOpen
     transform: translateX(0)
 
 
+.active
+  color: black
 

@@ -1,12 +1,6 @@
-.About {
+#About {
   position: absolute;
-  margin-left: 100vw;
-  width: 100vw;
-  height: 100vh;
-}
-
-.cloud {
-  position: absolute;
+  top: 238vh;
+  height: 120vh;
   width: 100%;
-  bottom: 0;
 }/*# sourceMappingURL=About.css.map */

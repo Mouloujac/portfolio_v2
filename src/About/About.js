@@ -3,8 +3,8 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="About">
-      <img className="cloud" src="./cloud.svg"></img>
+    <div id="About">
+      
     </div>
   );
 };

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import BurgerMenu from "./TabBar/BurgerMenu/BurgerMenu";
 import Projects from "./Projects/Projects";
 import Accueil from "./Accueil/Accueil";
+import About from "./About/About";
 
 import "./App.css"
 
@@ -30,6 +31,7 @@ class App extends Component {
               <BurgerMenu /> 
               <Accueil />
               <Projects />
+              <About />
               <img id="cloud" src="./Cloud.svg"></img>  
               <img id="cloud2" src="./Cloud2.svg"></img>  
             </>      

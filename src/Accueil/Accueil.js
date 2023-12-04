@@ -3,13 +3,13 @@ import "./Accueil.css";
 
 const Accueil = () => {
   return (
-    <div className="Accueil">
+    <div id="Accueil">
       <div className="Title">
         <h1>
           
           Moi c'est Théo Lecolley
         </h1>
-        <h2>Je suis Développeur Web</h2>
+        <h2>Développeur Web</h2>
       </div>
     </div>
   );
