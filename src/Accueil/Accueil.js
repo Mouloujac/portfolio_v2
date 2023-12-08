@@ -9,6 +9,10 @@ const Accueil = () => {
           
           Moi c'est Théo Lecolley
         </h1>
+        <h1 id="titleShadow">
+          
+          Moi c'est Théo Lecolley
+        </h1>
         <h2>Développeur Web</h2>
       </div>
     </div>

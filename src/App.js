@@ -30,10 +30,9 @@ class App extends Component {
             <>
               <BurgerMenu /> 
               <Accueil />
-              <Projects />
               <About />
+              <Projects />
               <img id="cloud" src="./Cloud.svg"></img>  
-              <img id="cloud2" src="./Cloud2.svg"></img>  
             </>      
         ) : (
           <div>
