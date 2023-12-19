@@ -5,15 +5,16 @@ const Accueil = () => {
   return (
     <div id="Accueil">
       <div className="Title">
+        <h2 id="hi">Hi,</h2>
         <h1>
           
-          Moi c'est Théo Lecolley
+          I am Théo Lecolley
         </h1>
         <h1 id="titleShadow">
           
-          Moi c'est Théo Lecolley
+          I am Théo Lecolley
         </h1>
-        <h2>Développeur Web</h2>
+        <h2>Web Developper</h2>
       </div>
     </div>
   );

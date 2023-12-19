@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap')
 
 .App 
-    height: 360vh
     background: rgb(209,191,47)
     background: radial-gradient(circle, rgba(209,191,47,0.7987570028011204) 0%, rgba(70,211,252,0.4598214285714286) 100%)
+    @media (max-width: 576px)
+    overflow: hidden
+    
+    
 #cloud
     position: absolute
     width: 100%
-    bottom: -1px
+    bottom: -7px
     color: #CBF3F0
     z-index: 2
 
@@ -21,3 +24,17 @@
 
 h2
     font-family: 'Montserrat', sans-serif
+
+#opacityAbout
+  opacity: 0
+  transform: translateX(100px)
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+
+#opacityProject
+    opacity: 0
+    transform: translateX(-100px)
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out
+
+#opacityAbout.appear, #opacityProject.appear
+  opacity: 1
+  transform: translateX(0)

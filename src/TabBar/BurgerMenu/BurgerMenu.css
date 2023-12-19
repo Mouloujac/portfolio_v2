@@ -43,7 +43,7 @@
 
 .Menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   height: 80px;
@@ -54,7 +54,6 @@
   left: 0;
   transition: transform 0.3s ease-in-out;
   z-index: 9;
-  background-color: rgba(70, 209, 252, 0.066);
 }
 @media (max-width: 576px) {
   .Menu {
@@ -73,24 +72,33 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  margin: 1rem;
+  height: 100%;
+  border-radius: 40px;
 }
 @media (max-width: 576px) {
   .Menu div {
     flex-direction: column;
     width: 100vw;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
   }
 }
 .Menu div a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  padding-top: 2rem;
+  padding-top: 1.8rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
   letter-spacing: 0.3rem;
   font-weight: 700;
-  color: #283618;
+  color: #005f73;
   text-decoration: none;
   transition: all 0.3s linear;
   text-align: center;
-  margin-right: 2rem;
+  width: 130px;
 }
 @media (max-width: 576px) {
   .Menu div a {
@@ -102,35 +110,32 @@
     flex-direction: column;
     justify-self: center;
     align-items: center;
+    width: auto;
   }
 }
-.Menu div a:hover .underline {
-  display: block;
-  background-color: #606c38;
-  height: 3px;
-  width: 95%;
-  opacity: 1;
+.Menu div a:nth-child(1) {
+  border-radius: 40px 0px 0px 40px;
 }
 @media (max-width: 576px) {
-  .Menu div a:hover .underline {
-    width: 40%;
-    display: none;
+  .Menu div a:nth-child(1) {
+    border-radius: none;
+  }
+}
+.Menu div a:nth-child(3) {
+  border-radius: 0px 40px 40px 0px;
+}
+@media (max-width: 576px) {
+  .Menu div a:nth-child(3) {
+    border-radius: none;
   }
 }
 .Menu div .active {
-  color: black;
-}
-.Menu div .active .underline {
-  display: block;
-  background-color: #606c38;
-  height: 3px;
-  width: 95%;
-  opacity: 1;
+  color: #005f73;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 12px 0px inset;
 }
 @media (max-width: 576px) {
-  .Menu div .active .underline {
-    width: 30%;
-    display: none;
+  .Menu div .active {
+    box-shadow: none;
   }
 }
 .Menu img {
