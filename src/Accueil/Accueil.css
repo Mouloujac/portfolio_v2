@@ -6,20 +6,37 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 576px) {
+  #Accueil {
+    height: 600px;
+  }
+}
+
+#cloud {
+  position: absolute;
+  width: 100%;
+  bottom: -7px;
+  color: #CBF3F0;
+  z-index: 2;
+}
 
 .Title {
   margin-top: 240px;
   display: flex;
   flex-direction: column;
-  text-align: center;
   gap: 1rem;
+}
+@media (max-width: 576px) {
+  .Title {
+    margin-top: 150px;
+  }
 }
 .Title p {
   display: flex;
   justify-self: start;
 }
 .Title h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #005f73;
   z-index: 2;
   margin-top: -5rem;
@@ -34,7 +51,7 @@
 }
 .Title #hi {
   font-size: 3rem;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
   color: white;
 }
 .Title #titleShadow {
@@ -44,6 +61,7 @@
   margin-left: -5px;
   margin-top: -145px;
   z-index: 1;
+  display: none;
 }
 @media (max-width: 576px) {
   .Title #titleShadow {

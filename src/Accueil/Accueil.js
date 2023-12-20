@@ -16,6 +16,7 @@ const Accueil = () => {
         </h1>
         <h2>Web Developper</h2>
       </div>
+      <img id="cloud" src="./Cloud.svg" alt="Cloud"></img>
     </div>
   );
 };

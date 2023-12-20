@@ -58,7 +58,7 @@ class App extends Component {
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
-    },300 ); // Adjust the delay as needed
+    },); // Adjust the delay as needed
   }
 
   render() {
@@ -71,7 +71,6 @@ class App extends Component {
             <About />
             <Projects />
             <Footer />
-            <img id="cloud" src="./Cloud.svg" alt="Cloud"></img>
           </>
         ) : (
           <div>
